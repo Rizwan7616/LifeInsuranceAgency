@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectdemo.Staff_FXMLController">
+   <children>
+      <Button fx:id="log_out" layoutX="526.0" layoutY="11.0" onAction="#btnLogOutClicked" text="Log Out" />
+      <Label fx:id="lbWelcome" layoutX="14.0" layoutY="15.0" text="Welcome" />
+      <Label layoutX="216.0" layoutY="22.0" text="Life Insurance System">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="101.0" layoutY="49.0" prefHeight="377.0" prefWidth="412.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tAD" onSelectionChanged="#viewAgentDetails" text="Staff Details">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="checkInbox" layoutX="313.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnExportAD" text="Check Inbox" />
+                        <Label layoutX="163.0" layoutY="18.0" text="Staff Details" />
+                        <TableView layoutX="14.0" layoutY="39.0" prefHeight="200.0" prefWidth="383.0">
+                           <columns>
+                              <TableColumn prefWidth="262.6666564941406" text="Staff Name" />
+                              <TableColumn minWidth="0.0" prefWidth="120.0" text="Contact No." />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="view_directory" text="View Directory">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="-6.0" layoutY="13.0" prefHeight="323.0" prefWidth="404.0" />
+                        <TextArea layoutX="8.0" layoutY="23.0" prefHeight="127.0" prefWidth="143.0" text="Accounts Office:&#10;Rizwan(sr. accountant)&#10;01******&#10;Daiyan(jr. accountant)&#10;01*******&#10;" />
+                        <TextArea layoutX="164.0" layoutY="21.0" prefHeight="130.0" prefWidth="163.0" text="Procurement Office:&#10;Isfar(sr. officer)&#10;01******&#10;Bijoy(jr. officer)&#10;01*******" />
+                        <TextArea layoutX="8.0" layoutY="158.0" prefHeight="155.0" prefWidth="161.0" text="Guard:&#10;Razeeb&#10;01******&#10;Saiful&#10;01*******&#10;Motaleb&#10;01******" />
+                        <TextArea layoutX="182.0" layoutY="163.0" prefHeight="158.0" prefWidth="194.0" text="Library:&#10;Naeeem(librarian)&#10;01******&#10;Motiur(Officer in charge)&#10;01*******" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Compose Mail">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="386.0" text="Start writting here............." />
+                        <Label layoutX="14.0" layoutY="230.0" text="Write within 150 words" />
+                        <Label layoutX="311.0" layoutY="222.0" prefHeight="17.0" prefWidth="82.0" text="Send mail" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <VBox layoutX="3.0" layoutY="64.0" prefHeight="200.0" prefWidth="93.0" spacing="10.0">
+         <children>
+            <Button fx:id="launch_complain" mnemonicParsing="false" onAction="#btnHealthClicked" prefHeight="48.0" prefWidth="93.0" text="Launch a Complain" wrapText="true" />
+            <Button fx:id="apply_leave" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnEducationClicked" text="Apply For Leave" wrapText="true" />
+            <Button fx:id="change_pass" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#btnRetiremnetClicked" text="Change Password " wrapText="true" />
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="check_schedule" layoutY="317.0" mnemonicParsing="false" onAction="#btnSavingsClicked" text="Check Schedule" />
+      <Button fx:id="procurement_details" layoutX="3.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnFormsClicked" prefHeight="69.0" prefWidth="93.0" text="View Procurement Details" wrapText="true" />
+   </children>
+</AnchorPane>

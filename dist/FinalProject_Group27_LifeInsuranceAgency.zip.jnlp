@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FinalProject_Group27_LifeInsuranceAgency.zip.jnlp">
+  <information>
+    <title>FinalProject_Group27_LifeInsuranceAgency.zip</title>
+    <vendor>rizwa</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FinalProject_Group27_LifeInsuranceAgency.zip.jar" size="110727" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FinalProject_Group27_LifeInsuranceAgency.zip" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="projectdemo.ProjectDemo"  name="FinalProject_Group27_LifeInsuranceAgency.zip" />
+  <update check="always"/>
+</jnlp>
