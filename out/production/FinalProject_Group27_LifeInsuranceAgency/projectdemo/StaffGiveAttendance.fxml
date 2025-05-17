@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectdemo.StaffGiveAttendanceController">
+   <children>
+      <Text layoutX="55.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="50.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+      <Text layoutX="48.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <TextField fx:id="nameField" layoutX="126.0" layoutY="30.0" />
+      <TextField fx:id="idField" layoutX="100.0" layoutY="92.0" />
+      <DatePicker fx:id="datepicker" layoutX="88.0" layoutY="140.0" />
+      <Text layoutX="42.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" />
+      <Text layoutX="126.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="10.259765625" />
+      <TextField fx:id="hourField" layoutX="82.0" layoutY="187.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="minuteField" layoutX="136.0" layoutY="187.0" prefHeight="25.0" prefWidth="50.0" />
+      <Text layoutX="48.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift" />
+      <ComboBox fx:id="shiftbox" layoutX="86.0" layoutY="231.0" prefWidth="150.0" />
+      <ComboBox fx:id="timebox" layoutX="198.0" layoutY="188.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="saveButton" layoutX="42.0" layoutY="293.0" mnemonicParsing="false" onAction="#saveData" text="Save" />
+      <Button fx:id="backButton" layoutX="101.0" layoutY="293.0" mnemonicParsing="false" onAction="#loadStaffOptions" text="Back" />
+      <Text fx:id="saveText" layoutX="42.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

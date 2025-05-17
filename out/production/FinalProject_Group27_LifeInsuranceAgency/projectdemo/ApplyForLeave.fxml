@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectdemo.ApplyForLeaveController">
+    <Label fx:id="titleLabel" layoutX="28.0" layoutY="44.0" text="Leave Application Form" />
+    <Label fx:id="nameLabel" layoutX="28.0" layoutY="88.0" text="Name:" />
+    <TextField fx:id="nameField" layoutX="129.0" layoutY="84.0" prefWidth="200.0" />
+    <Label fx:id="idLabel" layoutX="28.0" layoutY="134.0" text="Employee ID:" />
+    <TextField fx:id="idField" layoutX="129.0" layoutY="130.0" prefWidth="200.0" />
+    <Label fx:id="dateLabel" layoutX="28.0" layoutY="180.0" text="Date of Leave:" />
+    <DatePicker fx:id="datePicker" layoutX="129.0" layoutY="176.0" prefWidth="200.0" />
+    <Label fx:id="reasonLabel" layoutX="28.0" layoutY="226.0" text="Reason for Leave:" />
+    <TextArea fx:id="reasonArea" layoutX="129.0" layoutY="222.0" prefHeight="120.0" prefWidth="400.0" />
+    <Button fx:id="submitButton" layoutX="28.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
+    <Button fx:id="clearButton" layoutX="111.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleClear" text="Clear" />
+    <Button fx:id="cancelButton" layoutX="198.0" layoutY="358.0" mnemonicParsing="false" onAction="#loadoptions" text="Cancel" />
+   <Text fx:id="saveText" layoutX="44.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+</AnchorPane>

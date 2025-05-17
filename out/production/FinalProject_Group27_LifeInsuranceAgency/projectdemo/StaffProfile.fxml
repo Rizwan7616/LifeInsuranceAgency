@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectdemo.StaffProfileController">
+    
+    <!-- Add ImageView to top right corner -->
+    <ImageView fitHeight="150.0" fitWidth="179.0" layoutX="306.0" layoutY="60.0">
+        <image>
+            <Image url="file:C:/Users/HP/OneDrive/Desktop/practise java/Insurance2/Insurance2/mukesh_ambani.jpg" />
+        </image>
+    </ImageView>
+
+    <Label layoutX="20" layoutY="20" text="Name:" />
+    <TextField fx:id="nameField" editable="false" focusTraversable="false" layoutX="80" layoutY="20" />
+
+    <Label layoutX="20" layoutY="60" text="ID:" />
+    <TextField fx:id="idField" editable="false" layoutX="80" layoutY="60" />
+
+    <Label layoutX="20" layoutY="100" text="Email Address:" />
+    <TextField fx:id="emailField" layoutX="140" layoutY="100" />
+
+    <Label layoutX="20" layoutY="140" text="Phone Number:" />
+    <TextField fx:id="phoneField" layoutX="140" layoutY="140" />
+
+    <Label layoutX="20" layoutY="180" text="Date of Hire:" />
+    <TextField fx:id="hireDateField" editable="false" layoutX="140" layoutY="180" />
+
+    <Label layoutX="28.0" layoutY="224.0" text="Retirement Plan:" />
+    <TextField fx:id="retirementPlanField" layoutX="140" layoutY="220" />
+
+    <Button fx:id="changeinfoButton" layoutX="20" layoutY="260" onAction="#changeInfo" text="Change Information" />
+    <Button fx:id="saveButton" layoutX="149.0" layoutY="260.0" mnemonicParsing="false" onAction="#saveData" text="Save" />
+    <Button fx:id="backButton" layoutX="375.0" layoutY="20.0" mnemonicParsing="false" onAction="#loadstaffoptions" text="Back" />
+
+</AnchorPane>

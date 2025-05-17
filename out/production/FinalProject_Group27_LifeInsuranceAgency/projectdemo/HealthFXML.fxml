@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="projectdemo.HealthFXMLController">
+   <children>
+      <Accordion layoutX="153.0" layoutY="46.0" />
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="347.0" prefWidth="580.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="580.0" spacing="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" text="Critical Care" />
+                  <Button mnemonicParsing="false" onAction="#btnCriticalCareDetailsClicked" text="View Details" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="580.0" spacing="100.0">
+               <children>
+                  <Label alignment="CENTER" text="Hospital Care" />
+                  <Button mnemonicParsing="false" onAction="#btnHospitalCareDetailsClicked" text="View Details" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="580.0" spacing="100.0">
+               <children>
+                  <Label text="MediCare" />
+                  <Button mnemonicParsing="false" onAction="#btnMediCareDetailsClicked" text="View Details" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnBackClicked" text="Back" />
+   </children>
+</AnchorPane>
