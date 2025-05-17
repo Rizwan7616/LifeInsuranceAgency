@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectdemo.PolicyChangeController">
+   <children>
+      <Button fx:id="backButton" layoutX="498.0" layoutY="38.0" mnemonicParsing="false" onAction="#loadoptions" text="Back" />
+      <Label layoutX="25.0" layoutY="14.0" text="Change Coverage Levels" />
+      <Label layoutX="25.0" layoutY="57.0" text="Current Coverage Level:" />
+      <TextField fx:id="currentCoverageLevel" layoutX="176.0" layoutY="54.0" />
+      <Label layoutX="25.0" layoutY="94.0" text="New Coverage Level:" />
+      <TextField fx:id="newCoverageLevel" layoutX="176.0" layoutY="91.0" />
+      <Label layoutX="25.0" layoutY="131.0" text="Start Date:" />
+      <Label layoutX="25.0" layoutY="168.0" text="End Date:" />
+      <Button fx:id="saveButton" layoutX="240.0" layoutY="226.0" mnemonicParsing="false" onAction="#saveData" text="Save Changes" />
+      <Text fx:id="saveText" layoutX="115.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saved Changes" visible="false" />
+      <DatePicker fx:id="endDate" layoutX="153.0" layoutY="164.0" />
+      <DatePicker fx:id="startDate" layoutX="151.0" layoutY="127.0" />
+   </children>
+</AnchorPane>

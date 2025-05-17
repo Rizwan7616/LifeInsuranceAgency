@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectdemo.EducationFXMLController">
+   <children>
+      <Button layoutX="274.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnBacktoDetailsClicked" text="Back" />
+      <HBox alignment="TOP_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="330.0" prefWidth="582.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="330.0" prefWidth="626.0">
+               <children>
+                  <Label text="My Child's Education Protection plan" underline="true" wrapText="true">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="281.0" prefWidth="341.0" text="MetLife Bangladesh introduces the ideal life insurance “My Child’s Education Protection Plan” for you, where you can invest for your children’s future with the assurance of ensuring higher education while protecting them from the uncertainties of life." textFill="#6583e9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
